@@ -13,4 +13,4 @@ def roman_to_int(roman_string):
                 int_sum = int_sum - letter[roman_string[i]]
             else:
                 int_sum = int_sum + letter[roman_string[i]]
-        return int_sum
+        return int(int_sum)
