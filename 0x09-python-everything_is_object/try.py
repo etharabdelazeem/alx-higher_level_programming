@@ -1,6 +1,10 @@
 #!/usr/bin/python3
 
-a = [1, 2, 3, 4]
-print(id(a))
-a += [5]
-print(id(a))
+def magic_string(s = []):
+    s += ["BestSchool"]
+    return(", ".join(s))
+
+for i in range(10):
+        print(magic_string())
+
+
