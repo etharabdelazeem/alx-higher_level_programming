@@ -12,10 +12,10 @@ if __name__ == "__main__":
     import sys
 
     if len(sys.argv) == 1:
-        l = ""
+        letter = ""
     else:
-        l = sys.argv[1]
-    values = {'q': l}
+        letter = sys.argv[1]
+    values = {'q': letter}
     r = requests.post("http://0.0.0.0:5000/search_user", data=values)
     try:
         r = r.json()
